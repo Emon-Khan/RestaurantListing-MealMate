@@ -92,6 +92,42 @@ The **RestaurantListing** service is a crucial component of the **MealMate** pro
 ![image](https://github.com/user-attachments/assets/08a21746-f369-401b-b244-334309d29bfc)
 
 
+## Docker Instructions
 
+If you prefer using Docker for this service, you can pull and run the RestaurantListing image directly from Docker Hub.
+
+### Pulling the Image from Docker Hub
+
+1. To pull the image, use the following command:
+    ```bash
+    docker pull rkemon94/restaurantlisting-service:latest
+    ```
+
+### Running the Order Service with Docker
+
+2. Run the Restaurantlisting service in a Docker container:
+    ```bash
+    docker run --name restaurantlisting-container -p 9093:9093 rkemon94/restaurantlisting-service:latest
+    ```
+
+3. Access the service:
+
+   After running the container, you can access the API on http://localhost:9093.
+
+### Stopping and Removing the Container
+
+- To stop the running container:
+    ```bash
+    docker stop restaurantlisting-container
+    ```
+
+- To remove the container after stopping it:
+    ```bash
+    docker rm restaurantlisting-container
+    ```
+
+## Conclusion
+
+The RestaurantListing service is responsible for managing restaurant information in the MealMate microservices architecture. By leveraging Docker, you can run this service quickly and easily, ensuring smooth integration with other MealMate services like Eureka for service discovery.
 
 
