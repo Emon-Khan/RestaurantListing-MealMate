@@ -100,14 +100,14 @@ If you prefer using Docker for this service, you can pull and run the Restaurant
 
 1. To pull the image, use the following command:
     ```bash
-    docker pull rkemon94/restaurantlisting-service:latest
+    docker pull rkemon94/restaurantlisting-mealmate:latest
     ```
 
 ### Running the Order Service with Docker
 
 2. Run the Restaurantlisting service in a Docker container:
     ```bash
-    docker run --name restaurantlisting-container -p 9093:9093 rkemon94/restaurantlisting-service:latest
+    docker run --name restaurantlisting-container -p 9093:9093 rkemon94/restaurantlisting-mealmate:latest
     ```
 
 3. Access the service:
